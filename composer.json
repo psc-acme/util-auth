@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/util-auth",
+    "description": "Package util-auth for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\UtilAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/dotenv": "^7.0",
+        "brick/math": "^0.12",
+        "symfony/symfony": "^6.3",
+        "nette/utils": "^4.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
